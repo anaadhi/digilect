@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/home.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="full" id="full">
+            <div class="choose" id="choose">
+                <h1 class="f-title" id="ok">Choose Candidate</h1>
+                <div class="c-cont">
+                    <div class="candidate" id="c1">
+
+                    </div>
+                    <div class="candidate" id="c2"></div>
+                    <div class="candidate" id="c3"></div>
+                </div>
+                <br><br>
+                <div class="c-cont">
+                    <div class="candidate" id="c4"></div>
+                    <div class="candidate" id="c5"></div>
+                    <div class="candidate" id="c6"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+        <div class="nav">
+            <a class="h-logo" href="/home" id="register">Digilect</a>
+            <ul class="navul">
+                <li class="navli"><a class="a" href="#">Home<hr class="hr"></a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <div class="left">
+                <form method="POST">
+                    <h1 class="f-title">
+                        Enter Voter<br>
+                        ID
+                    </h1>
+                    <input type="text" placeholder="Voter ID" required name="ID" id="voter" minlength="9" maxlength="9">
+                    <input type="number" placeholder="Aadhar Number" required name="aadhar" id="aadhar">
+                    <input type="text" placeholder="Candidate" required name="candydate" id="input">
+                    <button class="button" id="submit">Submit<div class="bg"></div><div class="bg2"></div></button></button>
+                </form>
+            </div>
+            <div class="right">
+                
+                    <img src="https://cdn.discordapp.com/attachments/430704906169614338/748988424643412008/Artboard_1.png" class="h-img">
+                    
+                
+            </div>
+        </div>
+    </header>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAK_0jTMCqXEpcHhgeLXtacZBetnKq7VQ",
+    authDomain: "spazio-ce472.firebaseapp.com",
+    databaseURL: "https://spazio-ce472.firebaseio.com",
+    projectId: "spazio-ce472",
+    storageBucket: "spazio-ce472.appspot.com",
+    messagingSenderId: "709919899881",
+    appId: "1:709919899881:web:3c339ee706017b0d997078"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    
+        
+
+
+    <script src="/js/vote.js" type="text/javascript"></script>
+    </body>
+    </html>
