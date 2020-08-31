@@ -71,9 +71,9 @@ document.getElementById("c6").addEventListener("click", function(){
 }, false);
 
 document.getElementById("submit").addEventListener("click", function(event) {
-    if (document.getElementById('aadhar').value < 100000000000 || document.getElementById('aadhar').value > 999999999999){
+    if (document.getElementById('aadhar').value < 100000000 || document.getElementById('aadhar').value > 999999999){
     event.preventDefault();
-    window.alert("invalid aadhar format");
+    window.alert("invalid format");
     }
 
 }, false);
